@@ -6,21 +6,24 @@ namespace oops_task1
     {
         static void Main(string[] args)
         {
+        #region Variables
             bool isBanking = true;
             int choice;
             Accounts newAcc = new Accounts();
-
+        #endregion
+        #region While loop
             while(isBanking)
             {
+                #region Menu Messages
                 System.Console.WriteLine("1. Create new account");
                 System.Console.WriteLine("2. Check Balance");
                 System.Console.WriteLine("3. Withdrawl");
                 System.Console.WriteLine("4. Deposit");
                 System.Console.WriteLine("5. Get Details");
                 System.Console.WriteLine("6. Exit");
-
-                choice = Convert.ToInt32(System.Console.ReadLine());
-
+                #endregion
+                choice = Convert.ToInt32(System.Console.ReadLine());                
+                #region Switch for choice
                 switch(choice)
                 {
                     #region Create New Account
@@ -56,17 +59,25 @@ namespace oops_task1
                         System.Console.WriteLine("Current Balance: {0:C}", newAcc.accBalance);
                     break;
                     #endregion
+                    #region Get Account Details
                     case 5:
                         newAcc.GetAccountDetails();
                     break;
+                    #endregion
+                    #region Exit Menu
                     case 6:
                         isBanking = false;
                     break;
+                    #endregion
+                    #region Default Error Message
                     default:
                         System.Console.WriteLine("Sorry " + choice + " is an invalid option");
                     break;
+                    #endregion
                 }
             }
+            #endregion
         }
+        #endregion
     }
 }
