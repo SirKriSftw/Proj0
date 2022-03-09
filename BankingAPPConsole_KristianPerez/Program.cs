@@ -9,7 +9,7 @@ namespace oops_task1
         #region Variables
             bool isBanking = true;
             int choice;
-            Accounts newAcc = new Accounts();
+            Accounts newAcc = new Accounts(){accIsActive = true};
         #endregion
         #region While loop
             while(isBanking)
