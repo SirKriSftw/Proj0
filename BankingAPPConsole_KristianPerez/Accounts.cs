@@ -32,7 +32,7 @@ public void GetAccountDetails()
     System.Console.WriteLine("Account No: " + accNo);
     System.Console.WriteLine("Name: " + accName);
     System.Console.WriteLine("Type: " + accType);
-    System.Console.WriteLine("Balance: " + accBalance);
+    System.Console.WriteLine("Balance: {0:C}", accBalance);
     System.Console.WriteLine("Email: " + accEmail);
     System.Console.WriteLine("--------------------------------");
 }

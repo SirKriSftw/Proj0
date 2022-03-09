@@ -46,14 +46,14 @@ namespace oops_task1
                     case 3:
                         System.Console.WriteLine("Enter amount to withdrawl");
                         newAcc.Withdrawl(Convert.ToDouble(Console.ReadLine()));
-                        System.Console.WriteLine("Current Balance: $" + newAcc.accBalance);
+                        System.Console.WriteLine("Current Balance: {0:C}", newAcc.accBalance);
                     break;
                     #endregion
                     #region Deposit
                     case 4:
                         System.Console.WriteLine("Enter amount to deposit");
                         newAcc.Deposit(Convert.ToDouble(System.Console.ReadLine()));
-                        System.Console.WriteLine("Current Balance: $" + newAcc.accBalance);
+                        System.Console.WriteLine("Current Balance: {0:C}", newAcc.accBalance);
                     break;
                     #endregion
                     case 5:
