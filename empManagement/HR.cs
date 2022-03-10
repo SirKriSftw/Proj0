@@ -1,0 +1,4 @@
+class HR : Employee
+{
+    
+}
