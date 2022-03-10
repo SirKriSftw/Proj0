@@ -12,14 +12,14 @@ class Accounts
 #endregion
 #region Account Methods
 #region Withdrawl
-public double Withdrawl(double amount)
+public double Withdrawl(int amount)
 {
     accBalance = accBalance - amount;
     return accBalance;   
 }
 #endregion
 #region Deposit
-public double Deposit(double amount)
+public double Deposit(int amount)
 {
     accBalance = accBalance + amount;
     return accBalance;   
